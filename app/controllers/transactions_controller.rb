@@ -20,9 +20,15 @@ class TransactionsController < ApplicationController
       end
     end
   end
-
-  def dm(trans, confs)
-    transactions = trans
-    rules = Apriori.find_association_rules(transactions)#, :min_items => 2, :max_items => 5, :min_support => 1, :max_support => 100, :min_confidence => 20)
-  end
 end
+
+#a = [["a", "b"], ["c", "d"]].to_json
+#c = [2,5,1,100,20].to_json
+
+#r = RestClient.post url, :trans => a, :confs => c
+#JSON.parse(r)
+
+#a -> b (50.0/1, 100.0)
+#b -> a (50.0/1, 100.0)
+#c -> d (50.0/1, 100.0)
+#d -> c (50.0/1, 100.0)
