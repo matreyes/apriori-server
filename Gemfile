@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'rails', '3.2.11'
+gem 'sqlite3'
 gem 'apriori-rails', '>= 0.2.4.2'
 
 gem 'json'
