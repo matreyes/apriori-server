@@ -1,5 +1,5 @@
 AprioriServer::Application.routes.draw do
-  get "home/index"
+  match 'home/index/:trans:conf' => 'apriori#index', :via => :get, :as => "apriori_index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
