@@ -1,6 +1,6 @@
 class Transaction < ActiveRecord::Base
-  attr_reader :trans, :configs
-  attr_accessible :trans, :configs
+  attr_reader :trans, :confs
+  attr_accessible :trans, :confs
 
   def trans=(ids)
   end
