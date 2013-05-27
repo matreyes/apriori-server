@@ -6,7 +6,7 @@ gem 'rails', '3.2.11'
 gem 'sqlite3'
 gem 'apriori-rails', '>= 0.2.4.2'
 gem 'rest-client'
-
+gem 'rb-readline'
 gem 'json'
 
 # Gems used only for assets and not required
